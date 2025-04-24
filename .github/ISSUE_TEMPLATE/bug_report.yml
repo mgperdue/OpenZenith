@@ -1,0 +1,44 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve OpenZenith! Please describe the issue below.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of OpenZenith are you using?
+      placeholder: e.g., v0.1.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: What did you do, and what happened?
+      placeholder: |
+        1. Run `openzenith`
+        2. Click the tray icon
+        3. Crash or unexpected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs or Screenshots
+      description: Paste logs or drag screenshots here (if applicable)

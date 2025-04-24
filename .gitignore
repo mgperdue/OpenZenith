@@ -172,3 +172,33 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# Python version management
+.python-version
+
+# Pre-commit hooks
+.pre-commit-config.yaml
+
+# Pytest cache
+.pytest_cache/
+
+# Documentation
+docs/usage.md
+docs/contributing.md
+docs/architecture.md
+
+# Environment template
+.env.template
+
+# Development requirements
+requirements-dev.txt
+
+# Cache files
+.pytest_cache/v/cache/stepwise
+.pytest_cache/v/cache/nodeids
+
+# Environment files
+.env
+
+.todo
