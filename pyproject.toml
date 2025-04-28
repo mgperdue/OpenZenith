@@ -43,3 +43,8 @@ dev = [
 "Documentation" = "https://github.com/mgperdue/OpenZenith/docs"
 "Source" = "https://github.com/mgperdue/OpenZenith"
 "Issue Tracker" = "https://github.com/mgperdue/OpenZenith/issues"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_thrid_party = ["core"]
