@@ -8,9 +8,11 @@ from core.config import DEFAULT_SEARCH_RADIUS_KM, LATITUDE, LONGITUDE
 class AircraftTracker:
     def __init__(self):
         self.aircraft: Dict[str, dict] = {}
+        self.last_update: datetime = datetime.utcnow()
 
     def update_aircraft(self, new_data: list):
         now = datetime.utcnow()
+        self.last_update = now
         for plane in new_data:
             self.aircraft[plane["icao24"]] = {
                 **plane,
